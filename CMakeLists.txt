@@ -68,5 +68,6 @@ SET(CMAKE_BUILD_TYPE Release)
 ADD_SUBDIRECTORY(src/projects/hipoly/1.0)
 ADD_SUBDIRECTORY(src/projects/w3tk/1.0)
 ADD_SUBDIRECTORY(src/projects/ams/8.0)
+ADD_SUBDIRECTORY(src/projects/firebird/1.0)
 ADD_SUBDIRECTORY(src/projects/ams-srv/8.0)
 
