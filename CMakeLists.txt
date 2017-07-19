@@ -71,3 +71,11 @@ ADD_SUBDIRECTORY(src/projects/ams/8.0)
 ADD_SUBDIRECTORY(src/projects/firebird/1.0)
 ADD_SUBDIRECTORY(src/projects/ams-srv/8.0)
 
+# ==============================================================================
+# inter-project dependencies  --------------------------------------------------
+# ==============================================================================
+
+ADD_DEPENDENCIES(w3tk_shared hipoly_shared)
+ADD_DEPENDENCIES(ams_shared w3tk_shared hipoly_shared)
+
+
