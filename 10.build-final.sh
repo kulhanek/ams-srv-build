@@ -29,6 +29,8 @@ echo ""
 
 # ------------------------------------------------------------------------------
 
+set -o pipefail
+
 cmake -DCMAKE_INSTALL_PREFIX="$PREFIX" . 2>&1 | tee configure.log || exit 1
 make -j "$N" 2>&1 | tee make.log || exit 1
 make install 2>&1 | tee install.log || exit 1
