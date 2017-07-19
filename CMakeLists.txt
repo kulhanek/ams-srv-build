@@ -77,5 +77,7 @@ ADD_SUBDIRECTORY(src/projects/ams-srv/8.0)
 
 ADD_DEPENDENCIES(w3tk_shared hipoly_shared)
 ADD_DEPENDENCIES(ams_shared w3tk_shared hipoly_shared)
-
+ADD_DEPENDENCIES(firebird_shared hipoly_shared)
+ADD_DEPENDENCIES(ams-isoftrepo hipoly_shared w3tk_shared firebird_shared ams_shared)
+ADD_DEPENDENCIES(ams-isoftstat hipoly_shared w3tk_shared firebird_shared ams_shared)
 
