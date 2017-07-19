@@ -18,8 +18,8 @@ SET(COMPOSITE_PROJECT TRUE)
 SET(DEVELOPMENT_ROOT "${CMAKE_BINARY_DIR}/src")
 
 # extra options ----------------------------------
-SET(TRY_QT_LIB          OFF  CACHE INTERNAL "QT is not neccessary" FORCE)
-SET(AMS_CORE_ONLY       ON   CACHE BOOL "Only AMS core library?"   FORCE)
+SET(TRY_QT_LIB          OFF  CACHE BOOL "QT is not neccessary" FORCE)
+SET(AMS_CORE_ONLY       ON   CACHE BOOL "Only AMS core library?" FORCE)
 
 # ==============================================================================
 # libraries --------------------------------------------------------------------
