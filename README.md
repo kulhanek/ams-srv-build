@@ -5,7 +5,9 @@ Utilities for testing and building of the [AMS - Advanced Module System](https:/
 * iSoftRepo web service
 * module usage collector
 
-## Testing Mode
+## Building and Installation
+
+### Testing Mode
 ```bash
 $ git clone --recursive https://github.com/kulhanek/ams-srv-build.git
 $ cd ams-srv-build
@@ -14,7 +16,7 @@ $ ./01.pull-code.sh
 $ ./04.build-inline.sh      # build the code inline in src/
 ```
 
-## Production Build
+### Production Build
 ```bash
 $ git clone --recursive https://github.com/kulhanek/ams-srv-build.git
 $ cd ams-srv-build
