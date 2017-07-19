@@ -2,6 +2,13 @@
 
 PREFIX=/opt/ams-servers/8.0
 
+if [ "`hostname -f`" != "softrepo.ncbr.muni.cz" ]; then
+    echo "unsupported build machine - it must be softrepo.ncbr.muni.cz!"
+    exit 1
+fi
+
+# ------------------------------------------------------------------------------
+
 # add cmake from modules if they exist
 if type module &> /dev/null; then
     module add cmake
